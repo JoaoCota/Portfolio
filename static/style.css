@@ -101,10 +101,12 @@ section#inicio div#inicio_descricao{
 }
 
 section#inicio h2{
+    display: none;
     font-size: 3.5rem;
 }
 
 section#inicio span#subtitle{
+    display: none;
     margin-right: 8rem;
     font-size: 1rem;
 }
@@ -139,6 +141,14 @@ i.menu-mobile{
 }
 
 @media (max-width: 1080px){
+    section#inicio h2{
+        display: block;
+    }
+    
+    section#inicio span#subtitle{
+        display: block;
+    }
+
     #header{
         left: -300px;
     }
