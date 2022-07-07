@@ -21,3 +21,26 @@ __navItem.forEach(item => {
         }
     });
 });
+
+/* Animar todos os itens na tela que tiverem meu atributo data-anime */
+
+const __item = document.querySelectorAll("[data-anime]");
+
+const __animeScroll = () => {
+    const __windowTop = window.pageYOffset + window.innerHeight * 0.85;
+
+    __item.forEach((element) => {
+        if(__windowTop > element.offsetTop){
+            element.classList.add("animate");
+        }
+        else {
+            element.classList.remove("animate");
+        }
+    });
+};
+
+__animeScroll();
+
+window.addEventListener("scroll", () => {
+    __animeScroll();
+})
