@@ -22,6 +22,8 @@ __navItem.forEach(item => {
     });
 });
 
+
+
 /* Animar todos os itens na tela que tiverem meu atributo data-anime */
 
 const __item = document.querySelectorAll("[data-anime]");
@@ -43,4 +45,4 @@ __animeScroll();
 
 window.addEventListener("scroll", () => {
     __animeScroll();
-})
+});
