@@ -46,3 +46,8 @@ __animeScroll();
 window.addEventListener("scroll", () => {
     __animeScroll();
 });
+
+
+let anoAtual = new Date().getFullYear();
+let idade = anoAtual-1999;
+$('#abc span').text(idade);
